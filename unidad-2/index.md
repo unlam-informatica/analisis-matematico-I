@@ -19,28 +19,27 @@ permalink: /unidad-2/
 
 | Tema | Descripción |
 |------|-------------|
-| Distancia y entorno | Distancia entre reales, entorno y entorno reducido |
-| Límite finito | Definición épsilon-delta, interpretación gráfica |
-| Límites laterales | Límite por izquierda y derecha, relación con el límite global |
+| Distancia y entorno | $\lvert a - b \rvert$, entorno $V(a,\delta)$ y entorno reducido $\dot{V}(a,\delta)$ |
+| Límite finito | Definición $\varepsilon$-$\delta$: $\lim_{x \to a} f(x) = L$ |
+| Límites laterales | $\lim_{x \to a^+}$ y $\lim_{x \to a^-}$; relación con el límite global |
 | Unicidad del límite | Teorema de unicidad |
-| Propiedades del límite | Álgebra de límites |
-| Teorema de intercalación | Enunciado y aplicaciones (Sandwich) |
+| Propiedades del límite | Álgebra de límites (suma, producto, cociente, potencia, raíz) |
+| Teorema de intercalación | $g \leq f \leq h$ y $\lim g = \lim h = L \implies \lim f = L$ |
 | Infinitésimos | Definición, álgebra y comparación de infinitésimos |
-| Límites infinitos | Definición y cálculo |
-| Límites de variable infinita | Comportamiento en ±∞ |
-| Límites infinitos de variable infinita | Combinación de ambos |
-| Cálculo de límites | Técnicas e indeterminaciones (0/0, ∞/∞, 0·∞, ∞−∞, 1^∞, 0^0, ∞^0) |
-| Asíntotas | Horizontales, verticales y oblicuas — ecuaciones |
+| Límites infinitos | $\lim_{x \to a} f(x) = \pm\infty$ |
+| Límites de variable infinita | $\lim_{x \to \pm\infty} f(x)$ |
+| Cálculo de límites | Técnicas e indeterminaciones ($\frac{0}{0}$, $\frac{\infty}{\infty}$, $1^\infty$, ...) |
+| Asíntotas | Verticales ($x = a$), horizontales ($y = L$) y oblicuas ($y = mx + b$) |
 
 ### Continuidad
 
 | Tema | Descripción |
 |------|-------------|
-| Función continua en un punto | Definición y condiciones |
-| Continuidad en intervalos | Intervalo abierto y cerrado |
+| Función continua en un punto | Las tres condiciones: $f(a)$ existe, $\lim_{x\to a} f(x)$ existe y $= f(a)$ |
+| Continuidad en intervalos | Intervalo abierto $(a, b)$ e intervalo cerrado $[a, b]$ |
 | Álgebra de funciones continuas | Operaciones que preservan la continuidad |
-| Propiedades | Teorema del valor intermedio, teorema de Weierstrass |
-| Discontinuidades | Clasificación: evitable, de salto, esencial |
+| Propiedades | TVI: si $f(a)\cdot f(b) < 0$, existe $c \in (a,b)$ con $f(c) = 0$ |
+| Discontinuidades | Evitable, de salto (1ª especie), esencial (2ª especie) |
 
 ## Material disponible
 

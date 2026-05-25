@@ -17,15 +17,15 @@ permalink: /unidad-1/
 |------|-------------|
 | Definición de función | Dominio, imagen, representación en diferentes registros |
 | Funciones como modelos | Uso de funciones para modelar situaciones reales |
-| Ceros y signo | Cálculo de ceros y análisis del signo de una función |
-| Funciones par e impar | Definición, propiedades y reconocimiento gráfico |
+| Ceros y signo | Cálculo de ceros y análisis del signo de $f$ |
+| Funciones par e impar | $f(-x) = f(x)$ (par) y $f(-x) = -f(x)$ (impar) |
 | Funciones algebraicas | Polinomiales, racionales, irracionales — gráficos y características |
-| Funciones trascendentes | Exponencial, logarítmica, trigonométricas, inversas trig. |
-| Función acotada | Definición y ejemplos |
-| Álgebra de funciones | Suma, resta, producto, cociente y composición |
-| Transformaciones | Desplazamientos horizontales/verticales, alargamientos, contracciones y reflexiones |
+| Funciones trascendentes | $e^x$, $\ln x$, trigonométricas e inversas trigonométricas |
+| Función acotada | Existe $M$ tal que $\lvert f(x) \rvert \leq M$ para todo $x$ en el dominio |
+| Álgebra de funciones | Suma, resta, producto, cociente y composición $f \circ g$ |
+| Transformaciones | Desplazamientos, alargamientos, contracciones y reflexiones de $f(x)$ |
 | Funciones biyectivas | Inyectividad, sobreyectividad y biyectividad |
-| Función inversa | Condición de existencia, cálculo y representación gráfica |
+| Función inversa | Condición de existencia, cálculo y relación con la recta $y = x$ |
 
 ## Material disponible
 

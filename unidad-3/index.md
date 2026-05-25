@@ -15,21 +15,20 @@ permalink: /unidad-3/
 
 | Tema | Descripción |
 |------|-------------|
-| Razón de cambio media | Cociente incremental y su interpretación |
-| Razón de cambio instantánea | Límite del cociente incremental — definición de derivada |
-| Significado geométrico | Pendiente de la recta tangente |
-| Significado físico | Velocidad instantánea, interpretaciones aplicadas |
-| Derivada en un punto | Definición formal |
-| La derivada como función | Función derivada f′(x) |
-| Recta tangente y normal | Ecuaciones a partir de la derivada |
-| Derivadas laterales | Derivada por izquierda y por derecha |
-| Continuidad y derivabilidad | Una función derivable es continua (recíproco falso) |
-| Derivadas de funciones elementales | Tabla de derivadas básicas |
+| Razón de cambio media | Cociente incremental $\dfrac{f(x_0+h)-f(x_0)}{h}$ |
+| Razón de cambio instantánea | $f'(x_0) = \lim_{h \to 0} \dfrac{f(x_0+h)-f(x_0)}{h}$ |
+| Significado geométrico | Pendiente de la recta tangente en $(x_0, f(x_0))$ |
+| Significado físico | Velocidad instantánea; interpretaciones aplicadas |
+| Derivada como función | $f' : \text{Dom}\,f' \to \mathbb{R}$ |
+| Recta tangente y normal | Ecuaciones a partir de $f'(x_0)$ |
+| Derivadas laterales | $f'_+(x_0)$ y $f'_-(x_0)$ |
+| Continuidad y derivabilidad | Derivable $\implies$ continua (recíproco falso) |
+| Derivadas elementales | Tabla de derivadas básicas |
 | Reglas de derivación | Suma, producto, cociente, constante |
-| Regla de la cadena | Derivada de la composición de funciones |
-| Derivada de la función inversa | Relación entre f′ y (f⁻¹)′ |
-| Derivada implícita | Derivación cuando y no está despejada |
-| Derivación logarítmica | Técnica para productos/cocientes de potencias |
+| Regla de la cadena | $[f(g(x))]' = f'(g(x)) \cdot g'(x)$ |
+| Derivada de la función inversa | $(f^{-1})'(y) = \dfrac{1}{f'(f^{-1}(y))}$ |
+| Derivada implícita | Cuando $y$ no está despejada de $F(x,y) = 0$ |
+| Derivación logarítmica | Para $[u(x)]^{v(x)}$ y productos/cocientes complejos |
 
 ## Material disponible
 

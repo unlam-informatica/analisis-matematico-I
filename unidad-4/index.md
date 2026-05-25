@@ -15,12 +15,12 @@ permalink: /unidad-4/
 
 | Tema | Descripción |
 |------|-------------|
-| Órdenes de contacto | Comparación del comportamiento de dos curvas en un punto |
-| Expresión de un polinomio por sus derivadas | Relación entre los coeficientes y las derivadas sucesivas |
-| Polinomio de Taylor | Aproximación de una función en torno a un punto x = a |
-| Polinomio de Maclaurin | Caso particular de Taylor centrado en x = 0 |
-| Aproximación lineal | Polinomio de Taylor de grado 1 — tangente como aproximación |
-| Término complementario (resto) | Estimación del error de aproximación |
+| Órdenes de contacto | $f^{(k)}(a) = g^{(k)}(a)$ para $k = 0,\ldots,n$ pero no para $k = n+1$ |
+| Expresión por derivadas | Relación entre los coeficientes del polinomio y $f^{(k)}(a)$ |
+| Polinomio de Taylor | $P_n(x) = \sum_{k=0}^{n} \dfrac{f^{(k)}(a)}{k!}(x-a)^k$ centrado en $x = a$ |
+| Polinomio de Maclaurin | Caso particular con $a = 0$ |
+| Aproximación lineal | $P_1(x) = f(a) + f'(a)(x-a)$ — la recta tangente |
+| Resto de Lagrange | $R_n(x) = \dfrac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}$ para algún $c$ entre $a$ y $x$ |
 
 ## Material disponible
 
