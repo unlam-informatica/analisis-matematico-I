@@ -44,3 +44,4 @@ permalink: /unidad-2/
 ## Material disponible
 
 - [Teoría — Resumen completo](./teoria/unidad-2)
+- [Práctica 2 — Resolución completa](./practica/practica-2)

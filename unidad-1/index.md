@@ -30,3 +30,4 @@ permalink: /unidad-1/
 ## Material disponible
 
 - [Teoría — Resumen completo](./teoria/unidad-1)
+- [Práctica 1 — Resolución completa](./practica/practica-1)

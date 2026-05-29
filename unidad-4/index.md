@@ -25,3 +25,4 @@ permalink: /unidad-4/
 ## Material disponible
 
 - [Teoría — Resumen completo](./teoria/unidad-4)
+- [Práctica 4 — Resolución completa](./practica/practica-4)

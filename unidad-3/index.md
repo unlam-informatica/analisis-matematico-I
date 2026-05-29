@@ -33,3 +33,4 @@ permalink: /unidad-3/
 ## Material disponible
 
 - [Teoría — Resumen completo](./teoria/unidad-3)
+- [Práctica 3 — Resolución completa](./practica/practica-3)
