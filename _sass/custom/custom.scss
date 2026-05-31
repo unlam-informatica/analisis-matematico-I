@@ -38,10 +38,10 @@
   mjx-container[display="true"],
   .MathJax_Display,
   .MathJax[display="true"] {
+    position: relative;
     margin: 1.15rem 0 !important;
-    padding: 0.9rem 1rem;
+    padding: 1.3rem 1rem 0.9rem;
     border: 1px solid rgba(116, 154, 255, 0.45);
-    border-left: 4px solid #8fb0ff;
     border-radius: 8px;
     background: rgba(116, 154, 255, 0.12);
     box-shadow: 0 0 0 1px rgba(116, 154, 255, 0.08) inset;
@@ -57,9 +57,13 @@
   // Realce suave para fórmulas inline, sin romper el flujo de lectura.
   mjx-container:not([display="true"]),
   .MathJax:not([display="true"]):not(.MathJax_Display) {
-    padding: 0.05em 0.22em;
+    display: inline-block;
+    line-height: 1.2;
+    padding: 0.14em 0.3em 0.18em;
     border-radius: 0.25em;
     background: rgba(116, 154, 255, 0.12);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
   }
 
   table {
