@@ -16,10 +16,10 @@ callouts_level: quiet
 callouts:
   enunciado:
     title: Enunciado
-    color: blue
+    color: amber
   resolucion:
     title: Resolución
-    color: green
+    color: teal
 
 aux_links:
   "GitHub":

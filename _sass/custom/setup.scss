@@ -1,2 +1,12 @@
 // setup.scss — se importa antes del tema.
-// Sin overrides de color: se respeta la paleta original de just-the-docs dark.
+// Sin overrides de color de tema: se respeta la paleta original de just-the-docs dark.
+
+// Colores custom para callouts (dark mode friendly).
+// Cada color requiere niveles 000 (fondo tintado) y 300 (borde/título).
+// Tonos desaturados pensados para lectura prolongada sobre fondo oscuro.
+
+$amber-000: #f4c87a;
+$amber-300: #c8862a;
+
+$teal-000:  #7fc8b9;
+$teal-300:  #2d9588;
