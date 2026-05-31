@@ -2,7 +2,7 @@
 
 Apuntes, guías de referencia y ejercicios prácticos de la cursada, organizados por unidad.
 
-**Sitio web:** [unlam-informatica.github.io/analisis-matematico-I](https://unlam-informatica.github.io/analisis-matematico-I/)
+**Sitio web:** [unlam-informatica.github.io/analisis-matematico-i](https://unlam-informatica.github.io/analisis-matematico-i/)
 
 ## Contenido
 

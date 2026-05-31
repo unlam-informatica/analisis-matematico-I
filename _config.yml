@@ -4,7 +4,7 @@ description: Apuntes, guías de referencia y ejercicios prácticos — UNLaM
 remote_theme: just-the-docs/just-the-docs
 
 url: https://unlam-informatica.github.io
-baseurl: /analisis-matematico-I
+baseurl: /analisis-matematico-i
 favicon_ico: "/assets/favicon/favicon.ico"
 
 color_scheme: dark
@@ -14,7 +14,7 @@ heading_anchors: true
 
 aux_links:
   "GitHub":
-    - "https://github.com/unlam-informatica/analisis-matematico-I"
+    - "https://github.com/unlam-informatica/analisis-matematico-i"
 
 exclude:
   - CLAUDE.md

@@ -48,5 +48,5 @@ Units are:
 ## GitHub Pages config
 
 - Theme: `just-the-docs/just-the-docs` (via `remote_theme`)
-- URL: `https://unlam-informatica.github.io/analisis-matematico-I`
+- URL: `https://unlam-informatica.github.io/analisis-matematico-i`
 - Color scheme: dark
