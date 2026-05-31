@@ -77,6 +77,7 @@ Practice exercises must follow this exact structure so the site stays consistent
 - No usar emojis tipo ✓/✗; usar las líneas de verificación en negrita.
 - Para definiciones por casos dentro de un callout, `\begin{cases}…\end{cases}` debe ir en **una sola línea** dentro de `$$…$$` (todo el `\begin…\end` en el mismo renglón, separando ramas con `\\`). Saltos de línea reales dentro del entorno rompen el blockquote del callout.
 - **Nunca usar `|…|` con pipes crudos en una línea de blockquote** (callout): Kramdown los interpreta como separadores de columna de tabla y rompe el render. Para valor absoluto, normas, etc., usar siempre `\lvert … \rvert` (o `\vert`). Esto vale tanto en el enunciado como en cualquier ecuación inline o display dentro del callout.
+- **Definición de una función como terna** (también pedida como "dominio, imagen y regla de asignación"): siempre escribirla en el formato canónico `nombre: Dominio \to Codominio \,/\, regla`. Ejemplo: $h:[0,4]\to[0,45]\,/\,y=h(t)=-5t^2+10t+40$. Cuando el enunciado pide la "terna", el resultado **debe** presentarse en esa forma (no basta con dar solo la fórmula). El separador `\,/\,` (con espacios finos) es el estilo que usa la cátedra para separar el dominio/codominio de la regla.
 
 **Agrupación por consigna:** los ejercicios de una misma consigna (por ejemplo "Graficar, indicar dominio e imagen") van bajo un único `## Ejercicio N — …`, y cada inciso `Na`, `Nb`, … usa el template de arriba.
 

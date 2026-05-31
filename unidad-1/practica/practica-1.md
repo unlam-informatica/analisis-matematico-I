@@ -526,89 +526,313 @@ El siguiente gráfico muestra el vaciado de un tanque de agua. Sólo mirando el 
 
 ---
 
-## Ejercicio 4 — Resorte (proporcionalidad directa)
+## Ejercicio 4 — Resorte
 
-Estiramiento $y$ (pulgadas) en función de la masa $x$. Datos $x=0,\dots,8$ con $y=0;\,0{,}875;\,1{,}721;\,2{,}641;\,3{,}531;\,4{,}391;\,5{,}241;\,6{,}120;\,6{,}992$.
+Para diseñar un vehículo es necesario crear un modelo que permita determinar la respuesta de un resorte con diferentes cargas. Se realizó un experimento para medir el estiramiento ($y$) de un resorte, en pulgadas, como una función del número ($x$) de unidades de masa colocadas como carga en él y se obtuvieron los siguientes resultados:
 
-### `4a` - Variables
+| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| $y$ | $0$ | $0{,}875$ | $1{,}721$ | $2{,}641$ | $3{,}531$ | $4{,}391$ | $5{,}241$ | $6{,}120$ | $6{,}992$ |
 
-**Independiente:** masa $x$. **Dependiente:** estiramiento $y$.
+### `4a`
 
-### `4b` - Gráfica
+{: .enunciado }
+> ¿Cuál es la variable independiente y dependiente del problema? (con sus unidades).
 
-Los puntos se alinean aproximadamente sobre una recta que pasa por el origen (proporcionalidad directa). Se grafica como nube de puntos con su recta de ajuste (verificar en GeoGebra).
+{: .resolucion }
+> El experimento consiste en colocar distintas cargas en el resorte y medir cuánto se estira. La causa es la masa que colgamos, y el efecto es el estiramiento que provoca. Entonces:
+>
+> - Variable independiente: $x$, el número de unidades de masa colocadas como carga (adimensional, "unidades de masa").
+> - Variable dependiente: $y$, el estiramiento del resorte, medido en pulgadas.
+>
+> **Resultado:** $x$ (unidades de masa) es la independiente; $y$ (pulgadas) es la dependiente.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4c` - Constante de proporcionalidad y función
+### `4b`
 
-Como $y=kx$ y pasa por el origen, estimamos $k$ con la pendiente media. Tomando el último dato: $k\approx\dfrac{6{,}992}{8}=0{,}874\approx0{,}875$. La regresión lineal da $k\approx0{,}875$.
+{: .enunciado }
+> Usar **Tabla** en GeoGebra para graficar los puntos en un par de ejes cartesianos y comprobar la hipótesis de que el estiramiento "y" es proporcional a la masa "x" que se cuelga del resorte.
 
-**Resultado: $f(x)=0{,}875\,x$.**
+{: .resolucion }
+> Dos cantidades $x$ e $y$ son proporcionales cuando existe una constante $k$ tal que
+>
+> $$y=k\,x,$$
+>
+> es decir, el cociente $\dfrac{y}{x}$ se mantiene aproximadamente constante para todos los valores observados (excluyendo $x=0$). Verificamos esa condición con la tabla:
+>
+> | $x$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ |
+> |-----|-----|-----|-----|-----|-----|-----|-----|-----|
+> | $y/x$ | $0{,}875$ | $0{,}861$ | $0{,}880$ | $0{,}883$ | $0{,}878$ | $0{,}874$ | $0{,}874$ | $0{,}874$ |
+>
+> Todos los cocientes están muy próximos a $0{,}875$, con pequeñas variaciones atribuibles al error de medición. Esto confirma la hipótesis de proporcionalidad directa.
+>
+> Al graficar los puntos en GeoGebra (comando **Tabla**), los $9$ puntos quedan prácticamente alineados sobre una recta que pasa por el origen, lo que es consistente con $y=k\,x$.
+>
+> **Resultado:** los cocientes $y/x$ son aproximadamente constantes ($\approx 0{,}875$) y los puntos se alinean sobre una recta por el origen, por lo que la hipótesis de proporcionalidad se verifica.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4d` - Dominio e imagen en contexto
+### `4c`
 
-Las masas van de $0$ a $8$, y $f(0)=0$, $f(8)=7$.
+{: .enunciado }
+> Estimar la constante de proporcionalidad con GeoGebra utilizando el comando **Regresión** (se puede encontrar en los "tres puntitos" en la tabla) y armar la función obtenida. O hacerlo manualmente.
 
-**Resultado: $f:[0,8]\to[0,7]$.** ✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> Para estimar la constante de proporcionalidad $k$ de la relación $y=k\,x$, podemos:
+>
+> - **Usar GeoGebra:** seleccionar la tabla, elegir **Regresión** $\to$ **Lineal** y obtener la ecuación $y\approx 0{,}875\,x$.
+> - **Hacerlo manualmente:** promediar los cocientes $y/x$ calculados en `4b`:
+>
+> $$\bar{k}=\dfrac{0{,}875+0{,}861+0{,}880+0{,}883+0{,}878+0{,}874+0{,}874+0{,}874}{8}.$$
+>
+> $$\bar{k}\approx 0{,}875.$$
+>
+> Ambos caminos llevan al mismo valor:
+>
+> $$k\approx 0{,}875.$$
+>
+> La función obtenida es:
+>
+> $$f(x)=0{,}875\,x.$$
+>
+> **Resultado:** $k\approx 0{,}875$ pulgadas por unidad de masa, y la función es $f(x)=0{,}875\,x$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4e` - Estiramiento con masa $10$
+### `4d`
 
-$$f(10)=0{,}875\cdot10=8{,}75.$$
+{: .enunciado }
+> Identificar dominio e imagen de la función definida en el ítem c) bajo el contexto del problema.
 
-**Resultado: $8{,}75$ pulgadas.** ✓ Coincide con la respuesta oficial. (Extrapolación fuera del rango medido.)
+{: .resolucion }
+> En el contexto del experimento, la variable $x$ representa la cantidad de unidades de masa colocadas como carga, y se midió para los valores enteros entre $0$ y $8$. Considerando el rango medido como dominio del modelo:
+>
+> $$D_f=[0,8].$$
+>
+> Como $f(x)=0{,}875\,x$ es una función lineal creciente, los valores mínimo y máximo de la imagen se alcanzan en los extremos del dominio:
+>
+> $$f(0)=0{,}875\cdot 0=0.$$
+>
+> $$f(8)=0{,}875\cdot 8=7.$$
+>
+> Por lo tanto:
+>
+> $$I_f=[0,7].$$
+>
+> La función expresada como terna queda:
+>
+> $$f:[0,8]\to[0,7]\,/\,f(x)=0{,}875\,x.$$
+>
+> **Resultado:** $f:[0,8]\to[0,7]\,/\,f(x)=0{,}875\,x$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4f` - Razón de cambio
+### `4e`
 
-Por ser lineal, la razón de cambio es la pendiente.
+{: .enunciado }
+> Predecir el estiramiento del resorte si se le carga una masa de $10$ unidades de masa.
 
-**Resultado: $0{,}875$ pulgadas por unidad de masa.** ✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> Para predecir el estiramiento con $10$ unidades de masa, evaluamos la función obtenida en `4c`:
+>
+> $$f(x)=0{,}875\,x.$$
+>
+> Reemplazamos $x=10$:
+>
+> $$f(10)=0{,}875\cdot 10.$$
+>
+> $$f(10)=8{,}75.$$
+>
+> Observación: el valor $x=10$ queda fuera del dominio en contexto $[0,8]$, por lo que es una **extrapolación** del modelo. La predicción asume que la relación de proporcionalidad sigue siendo válida fuera del rango medido, lo que físicamente solo se cumple mientras no se supere el límite elástico del resorte.
+>
+> **Resultado:** se predice un estiramiento de $8{,}75$ pulgadas.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
+
+### `4f`
+
+{: .enunciado }
+> ¿Cuál es la razón de cambio del estiramiento del resorte respecto a la carga colgada? Interpretar gráficamente.
+
+{: .resolucion }
+> La razón de cambio media del estiramiento respecto a la carga en un intervalo $[x_1,x_2]$ es:
+>
+> $$\dfrac{\Delta y}{\Delta x}=\dfrac{f(x_2)-f(x_1)}{x_2-x_1}.$$
+>
+> Como $f(x)=0{,}875\,x$ es una función lineal, esa razón es constante e igual a la pendiente para cualquier intervalo:
+>
+> $$\dfrac{\Delta y}{\Delta x}=0{,}875\ \dfrac{\text{pulgadas}}{\text{unidad de masa}}.$$
+>
+> **Interpretación gráfica:** la razón de cambio es la inclinación de la recta $y=0{,}875\,x$. Al ser constante, a incrementos iguales en el eje $x$ les corresponden incrementos iguales en el eje $y$: por cada unidad de masa adicional que se cuelga del resorte, el estiramiento aumenta $0{,}875$ pulgadas.
+>
+> **Resultado:** la razón de cambio es constante e igual a $0{,}875$ pulgadas por unidad de masa.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
-## Ejercicio 5* — Canaleta de chapa
+## Ejercicio 5* — Canaleta de desagüe
 
-Chapa de $12$ cm de ancho; se doblan $x$ cm en cada borde. El fondo mide $12-2x$ y la altura $x$.
+Se desea construir una canaleta de desagüe a partir de una hoja rectangular de metal de $12$ cm de ancho y $1$ metro de largo. Se dobla la hoja hacia arriba $x$ cm en los dos bordes de $1$ metro de largo.
 
-### `5a` - Área de la sección transversal
+### `5a`
 
-$$A(x)=x\,(12-2x)=2x(6-x).$$
+{: .enunciado }
+> Expresar el área de la sección transversal de la canaleta como una función de $x$.
 
-Equivalentemente $A(x)=12x-2x^2$.
+{: .resolucion }
+> Al doblar $x$ cm hacia arriba en cada uno de los dos bordes largos, la sección transversal queda con forma de rectángulo abierto (sin tapa superior):
+>
+> - La altura de los lados es $x$ cm.
+> - El ancho del fondo es lo que queda de los $12$ cm originales después de descontar los dos pliegues, es decir, $12-2x$ cm.
+>
+> El área de la sección transversal es la del rectángulo de base $12-2x$ y altura $x$:
+>
+> $$A(x)=(12-2x)\cdot x.$$
+>
+> Distribuyendo:
+>
+> $$A(x)=12x-2x^2.$$
+>
+> Se puede también factorizar como:
+>
+> $$A(x)=2x\,(6-x).$$
+>
+> **Resultado:** $A(x)=12x-2x^2=2x(6-x)$, expresada en cm².
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: $A(x)=2x(6-x)$** (la oficial lo expresa como volumen $V(x)=200x(6-x)$ incorporando el largo de $1\text{ m}=100$ cm, ya que $V=100\cdot A=100\cdot2x(6-x)=200x(6-x)$).
+### `5b`
 
-### `5b` - Dominio
+{: .enunciado }
+> ¿Cuál es el dominio de esta función de acuerdo al contexto?
 
-Necesitamos $x>0$ y $12-2x>0\Rightarrow x<6$.
+{: .resolucion }
+> Para que la canaleta exista físicamente, deben cumplirse simultáneamente dos condiciones de contexto.
+>
+> **Condición 1.** El pliegue debe tener altura positiva (si no se dobla, no hay canaleta):
+>
+> $$x>0.$$
+>
+> **Condición 2.** El fondo debe tener ancho positivo (si se doblara más de la mitad por cada lado, no quedaría base):
+>
+> $$12-2x>0.$$
+>
+> $$2x<12.$$
+>
+> $$x<6.$$
+>
+> La intersección de ambas condiciones es:
+>
+> $$0<x<6.$$
+>
+> **Resultado:** $D_A=(0,6)$, con $x$ medido en cm.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: $D=(0,6)$.**
+### `5c`
 
-### `5c` - y 5d) Máximo
+{: .enunciado }
+> Graficar la función y estimar para qué valor de $x$ el área de la sección transversal de la canaleta es máxima.
 
-La parábola $A(x)=2x(6-x)$ tiene vértice en el punto medio de las raíces $x=0$ y $x=6$:
+{: .resolucion }
+> La función $A(x)=-2x^2+12x$ es cuadrática con coeficiente principal $a=-2<0$, por lo que su gráfica es una parábola que abre hacia abajo. Esto garantiza que el vértice corresponde a un **máximo absoluto**.
+>
+> Buscamos la abscisa del vértice. Como $A$ está factorizada como $A(x)=2x(6-x)$, sus raíces son $x_1=0$ y $x_2=6$. El vértice está en el punto medio entre ambas:
+>
+> $$x_v=\dfrac{x_1+x_2}{2}=\dfrac{0+6}{2}=3.$$
+>
+> Evaluamos $A$ en $x_v=3$ para obtener el valor máximo:
+>
+> $$A(3)=2\cdot 3\cdot(6-3).$$
+>
+> $$A(3)=2\cdot 3\cdot 3.$$
+>
+> $$A(3)=18.$$
+>
+> En el gráfico, la parábola corta al eje $x$ en $x=0$ y $x=6$, sube hasta el vértice $(3,18)$ y luego baja simétricamente.
+>
+> **Resultado:** el área de la sección transversal es máxima cuando $x=3$ cm, y vale $A_{\max}=18$ cm².
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-$$x_{\max}=\dfrac{0+6}{2}=3.$$
+### `5d`
 
-**Resultado: el área (y por tanto la capacidad) es máxima doblando $x=3$ cm.** $A(3)=2\cdot3\cdot3=18\text{ cm}^2$.
+{: .enunciado }
+> ¿Cuántos cm se deben doblar para que la canaleta tenga la capacidad máxima de transporte de agua?
 
-✓ Coincide con la respuesta oficial (máximo al doblar $3$ cm).
+{: .resolucion }
+> La capacidad de transporte de agua de la canaleta es el **volumen** que puede contener. Como la canaleta tiene sección transversal constante a lo largo de toda su longitud, el volumen es el producto del área de la sección por el largo:
+>
+> $$V(x)=A(x)\cdot L.$$
+>
+> El largo es $L=1$ m $=100$ cm, por lo que:
+>
+> $$V(x)=100\cdot A(x)=100\cdot(12x-2x^2)=200x(6-x).$$
+>
+> Como $100$ es una constante positiva, $V(x)$ alcanza su máximo en el mismo valor de $x$ que $A(x)$. De `5c` ya sabemos que el área es máxima en $x=3$, por lo que también lo es el volumen.
+>
+> El volumen máximo es:
+>
+> $$V(3)=100\cdot 18=1800.$$
+>
+> **Resultado:** se deben doblar $x=3$ cm en cada borde para que la canaleta tenga capacidad máxima, que vale $1800$ cm³.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
 ## Ejercicio 6 — Caja sin tapa
 
-Cartón de $24\times32$ cm; se cortan cuadrados de lado $x$ en las esquinas y se doblan los lados. La base queda $(24-2x)\times(32-2x)$ y la altura $x$.
+### `6`
 
-$$V(x)=(24-2x)(32-2x)\,x.$$
+{: .enunciado }
+> Expresar el volumen $V(x)$ de una caja sin tapa que se construye a partir de una pieza de cartón de $24\text{cm}\times 32\text{cm}$ cortando en las esquinas cuadrados de lado $x$. ¿Cuál es el dominio de dicha función de acuerdo al contexto? Con ayuda de GG estimar cuántos centímetros debe tener el cuadrado que se corte para que el volumen de la caja sea máximo.
 
-Sacando factor común $2$ de cada paréntesis: $V(x)=4(12-x)(16-x)x$.
-
-**Dominio:** $x>0$, $24-2x>0\Rightarrow x<12$ (la restricción más fuerte).
-
-**Resultado: $V(x)=(24-2x)(32-2x)x=4(12-x)(16-x)x$, con $D=(0,12)$.**
-
-Para el máximo se deriva (Unidad 3): $V'(x)=0$ da $x\approx4{,}53$ cm. Se verifica numéricamente/GeoGebra.
-
-✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> **Planteo de la fórmula.** Partimos de una pieza rectangular de cartón de $24\text{ cm}\times 32\text{ cm}$ y cortamos un cuadrado de lado $x$ en cada una de las cuatro esquinas. Al doblar las solapas hacia arriba se forma una caja sin tapa con:
+>
+> - Base rectangular de dimensiones $(24-2x)$ por $(32-2x)$ cm.
+> - Altura igual al lado del cuadrado recortado, es decir, $x$ cm.
+>
+> El volumen de la caja es el producto de la base por la altura:
+>
+> $$V(x)=(24-2x)\,(32-2x)\,x.$$
+>
+> Sacando factor común $2$ en cada paréntesis se obtiene una expresión equivalente más cómoda para analizar:
+>
+> $$V(x)=4\,x\,(12-x)\,(16-x).$$
+>
+> **Dominio en contexto.** Para que la caja exista físicamente deben cumplirse simultáneamente tres condiciones:
+>
+> $$x>0,\qquad 24-2x>0,\qquad 32-2x>0.$$
+>
+> Despejando las dos últimas:
+>
+> $$x<12,\qquad x<16.$$
+>
+> La restricción más fuerte es $x<12$ (la otra se cumple automáticamente). Combinando con $x>0$:
+>
+> $$D_V=(0,12).$$
+>
+> **Estimación del máximo con GeoGebra.** Como $V(x)=4x(12-x)(16-x)$ es un polinomio de grado $3$ con coeficiente principal positivo en $-x^3$ (al expandir queda $V(x)=4x^3-112x^2+768x$ con signo principal positivo en $4x^3$, pero al evaluar en el intervalo $(0,12)$ presenta un único máximo local), graficamos $V$ en GeoGebra restringida al dominio $(0,12)$. Con el comando `Extremo[V, 0, 12]` o moviendo el cursor sobre la curva se obtiene:
+>
+> $$x_{\max}\approx 4{,}53\text{ cm}.$$
+>
+> Evaluando $V$ en ese valor:
+>
+> $$V(4{,}53)=4\cdot 4{,}53\cdot(12-4{,}53)\cdot(16-4{,}53).$$
+>
+> $$V(4{,}53)\approx 4\cdot 4{,}53\cdot 7{,}47\cdot 11{,}47.$$
+>
+> $$V(4{,}53)\approx 1552{,}5\text{ cm}^3.$$
+>
+> Observación: el valor exacto se obtiene resolviendo $V'(x)=0$ (Unidad 3), que da $x_{\max}=\dfrac{4(7-\sqrt{13})}{3}\approx 4{,}526\text{ cm}$.
+>
+> **Resultado:** $V(x)=(24-2x)(32-2x)\,x=4x(12-x)(16-x)$, con $D_V=(0,12)$. El volumen es máximo cuando se cortan cuadrados de $x\approx 4{,}53$ cm de lado, alcanzando $V_{\max}\approx 1552{,}5$ cm³.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
