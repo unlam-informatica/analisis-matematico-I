@@ -14,21 +14,23 @@ Cada ejercicio incluye el enunciado resumido, el desarrollo con explicaciones, e
 
 ## Ejercicio 1 — Graficar, indicar dominio e imagen
 
-### `1a` - La función lineal que pasa por $P(-3,4)$ y $Q(2,-3)$
+### `1a`
 
-La pendiente es
+{: .enunciado }
+> La función lineal que pasa por $P(-3,4)$ y $Q(2,-3)$.
 
-$$m=\dfrac{y_Q-y_P}{x_Q-x_P}=\dfrac{-3-4}{2-(-3)}=\dfrac{-7}{5}=-\dfrac75.$$
-
-Usando la forma punto-pendiente con $Q(2,-3)$:
-
-$$y-(-3)=-\dfrac75(x-2)\ \Rightarrow\ y=-\dfrac75 x+\dfrac{14}{5}-3=-\dfrac75 x+\dfrac{14-15}{5}=-\dfrac75 x-\dfrac15.$$
-
-Una recta no constante tiene dominio e imagen $\mathbb{R}$.
-
-**Resultado: $m(x)=-\dfrac75 x-\dfrac15$, con $D=I=\mathbb{R}$.**
-
-✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> La pendiente es
+>
+> $$m=\dfrac{y_Q-y_P}{x_Q-x_P}=\dfrac{-3-4}{2-(-3)}=\dfrac{-7}{5}=-\dfrac75.$$
+>
+> Usando la forma punto-pendiente con $Q(2,-3)$:
+>
+> $$y-(-3)=-\dfrac75(x-2)\ \Rightarrow\ y=-\dfrac75 x+\dfrac{14}{5}-3=-\dfrac75 x-\dfrac15.$$
+>
+> Una recta no constante tiene dominio e imagen $\mathbb{R}$.
+>
+> **Resultado:** $m(x)=-\dfrac75 x-\dfrac15$, con $D=I=\mathbb{R}$. ✓ Coincide con la respuesta oficial.
 
 ### `1b` -  La función lineal que representa una recta paralela a $2x-3y+9=0$ y que corta el eje $x$ en $x=-\tfrac12$
 

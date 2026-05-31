@@ -12,6 +12,15 @@ color_scheme: dark
 search_enabled: true
 heading_anchors: true
 
+callouts_level: quiet
+callouts:
+  enunciado:
+    title: Enunciado
+    color: blue
+  resolucion:
+    title: Resolución
+    color: green
+
 aux_links:
   "GitHub":
     - "https://github.com/unlam-informatica/analisis-matematico-i"

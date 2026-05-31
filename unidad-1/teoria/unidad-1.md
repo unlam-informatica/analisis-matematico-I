@@ -92,7 +92,7 @@ Es el caso $n = 1$: $f(x) = mx + b$, con $m \neq 0$. Su gráfica es una recta no
 | Punto-pendiente | $y - y_0 = m(x - x_0)$ | Se conocen pendiente $m$ y un punto $(x_0, y_0)$ |
 | Segmentaria | $\dfrac{x}{p} + \dfrac{y}{q} = 1$ | Se conocen las intersecciones $(p, 0)$ y $(0, q)$ con los ejes |
 | Que pasa por dos puntos | $y - y_1 = \dfrac{y_2 - y_1}{x_2 - x_1}(x - x_1)$ | Se conocen dos puntos $(x_1, y_1)$ y $(x_2, y_2)$ |
-| Paramétrica | $\begin{cases} x = x_0 + at \\ y = y_0 + bt \end{cases}$ | Descripción vectorial con parámetro $t \in \mathbb{R}$ |
+| Paramétrica | $x = x_0 + at,\ \ y = y_0 + bt$ | Descripción vectorial con parámetro $t \in \mathbb{R}$ |
 
 **Cálculo de la pendiente** dados dos puntos:
 

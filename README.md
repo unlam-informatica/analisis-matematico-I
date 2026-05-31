@@ -6,24 +6,12 @@ Apuntes, guías de referencia y ejercicios prácticos de la cursada, organizados
 
 ## Contenido
 
-| Unidad | Tema | Parcial |
-|--------|------|---------|
-| 1 | Funciones | 1er parcial |
-| 2 | Límite funcional y Continuidad | 1er y 2do parcial |
-| 3 | Derivada | 2do parcial |
-| 4 | Polinomios de Taylor | 2do parcial |
-
-## Evaluación
-
-| Instancia | Unidades |
-|-----------|----------|
-| 1er parcial | 1 y parte de 2 (límites) |
-| 2do parcial | Continuidad (U2), 3 y 4 |
-| Recuperatorio | — |
-
-- Nota mínima para aprobar cada parcial: **4 puntos**
-- Promoción directa: ambos parciales **≥ 7 puntos**
-- Al menos **una** evaluación de seguimiento (ES) por parcial debe estar realizada para poder rendirlo
+| Unidad | Tema |
+|--------|------|
+| 1 | Funciones |
+| 2 | Límite funcional y Continuidad |
+| 3 | Derivada |
+| 4 | Polinomios de Taylor |
 
 ## Bibliografía
 

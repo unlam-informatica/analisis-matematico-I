@@ -37,20 +37,6 @@ Razón de cambio media e instantánea. Derivada en un punto y como función. Rec
 
 ---
 
-## Evaluación
-
-| Instancia | Fecha aprox. | Unidades |
-|-----------|:------------:|:--------:|
-| 1er parcial | Semana 8 | U1 y U2 (límites) |
-| 2do parcial | Semana 14–15 | U2 (continuidad), U3 y U4 |
-| Recuperatorio | Semana 15–16 | — |
-
-- **Promoción:** ambos parciales ≥ 7 puntos.
-- **Cursada:** al menos un parcial entre 4 y 6 puntos → rinde final.
-- **Requisito previo:** al menos **una** evaluación de seguimiento (ES) realizada por parcial.
-
----
-
 ## Bibliografía
 
 - Williner, B. (2016). *Apuntes de clase. Análisis Matemático I.* UNLaM — plataforma MIEL.
