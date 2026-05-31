@@ -74,6 +74,73 @@ $$f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$$
 - Dominio: $\mathbb{R}$
 - Continuas en todo $\mathbb{R}$
 
+#### 5.1.1 Función lineal
+
+Es el caso $n = 1$: $f(x) = mx + b$, con $m \neq 0$. Su gráfica es una recta no horizontal.
+
+- **Pendiente** $m$: variación de $y$ por cada unidad de $x$.
+- **Ordenada al origen** $b$: valor donde la recta corta al eje $y$.
+- **Raíz**: $x = -\dfrac{b}{m}$.
+- Si $m = 0$ se obtiene una **función constante** $f(x) = b$ (recta horizontal).
+
+**Formas de representar una recta**
+
+| Forma | Expresión | Cuándo usarla |
+|-------|-----------|---------------|
+| Explícita | $y = mx + b$ | Se conocen pendiente y ordenada al origen |
+| Implícita (general) | $Ax + By + C = 0$ | Forma estándar; incluye rectas verticales ($B = 0$) |
+| Punto-pendiente | $y - y_0 = m(x - x_0)$ | Se conocen pendiente $m$ y un punto $(x_0, y_0)$ |
+| Segmentaria | $\dfrac{x}{p} + \dfrac{y}{q} = 1$ | Se conocen las intersecciones $(p, 0)$ y $(0, q)$ con los ejes |
+| Que pasa por dos puntos | $y - y_1 = \dfrac{y_2 - y_1}{x_2 - x_1}(x - x_1)$ | Se conocen dos puntos $(x_1, y_1)$ y $(x_2, y_2)$ |
+| Paramétrica | $\begin{cases} x = x_0 + at \\ y = y_0 + bt \end{cases}$ | Descripción vectorial con parámetro $t \in \mathbb{R}$ |
+
+**Cálculo de la pendiente** dados dos puntos:
+
+$$m = \frac{y_2 - y_1}{x_2 - x_1}$$
+
+**Posiciones relativas de dos rectas** $y = m_1 x + b_1$ y $y = m_2 x + b_2$:
+
+- **Paralelas:** $m_1 = m_2$ y $b_1 \neq b_2$.
+- **Coincidentes:** $m_1 = m_2$ y $b_1 = b_2$.
+- **Perpendiculares:** $m_1 \cdot m_2 = -1$.
+- **Secantes (oblicuas):** $m_1 \neq m_2$.
+
+#### 5.1.2 Función cuadrática
+
+Es el caso $n = 2$: $f(x) = ax^2 + bx + c$, con $a \neq 0$. Su gráfica es una **parábola** con eje de simetría vertical.
+
+- Si $a > 0$: parábola con ramas hacia arriba (mínimo en el vértice).
+- Si $a < 0$: parábola con ramas hacia abajo (máximo en el vértice).
+- **Discriminante** $\Delta = b^2 - 4ac$ determina la cantidad de raíces reales:
+
+| $\Delta$ | Raíces reales |
+|----------|---------------|
+| $\Delta > 0$ | Dos raíces distintas |
+| $\Delta = 0$ | Una raíz doble |
+| $\Delta < 0$ | Ninguna raíz real |
+
+**Formas de representar una parábola**
+
+| Forma | Expresión | Información directa |
+|-------|-----------|---------------------|
+| Polinómica (desarrollada) | $f(x) = ax^2 + bx + c$ | Ordenada al origen $c$ |
+| Canónica (vértice) | $f(x) = a(x - h)^2 + k$ | Vértice $V = (h, k)$ y eje de simetría $x = h$ |
+| Factorizada | $f(x) = a(x - x_1)(x - x_2)$ | Raíces $x_1$ y $x_2$ |
+
+**Vértice de la parábola** a partir de la forma polinómica:
+
+$$h = -\frac{b}{2a}, \qquad k = f(h) = c - \frac{b^2}{4a}$$
+
+**Raíces (fórmula resolvente):**
+
+$$x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+**Relaciones de Vieta** entre coeficientes y raíces:
+
+$$x_1 + x_2 = -\frac{b}{a}, \qquad x_1 \cdot x_2 = \frac{c}{a}$$
+
+**Pasaje entre formas:** desarrollar la canónica o factorizada lleva a la polinómica; completar cuadrados lleva de polinómica a canónica; aplicar la resolvente y factorizar lleva de polinómica a factorizada (solo si $\Delta \geq 0$).
+
 ### 5.2 Funciones racionales
 
 $$f(x) = \frac{P(x)}{Q(x)}, \quad \text{con } P \text{ y } Q \text{ polinomios.}$$
