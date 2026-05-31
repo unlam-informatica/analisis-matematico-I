@@ -64,16 +64,19 @@ Practice exercises must follow this exact structure so the site stays consistent
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 ```
 
+**Source of truth para enunciados:** la guía oficial está en `reference/practica.pdf`. El enunciado **debe copiarse literalmente** de ese PDF, sin reescribirlo, resumirlo ni "naturalizarlo". Conservar la redacción, signos de puntuación, mayúsculas, paréntesis y notación matemática tal cual aparecen. Solo se permite traducir notación inline a LaTeX (`$…$`) cuando el PDF muestra fórmulas que en Markdown necesitan ese delimitador. Si el enunciado del PDF es ambiguo o contiene un error, no corregir en silencio: dejar el texto original y aclarar la interpretación en la resolución.
+
 **Reglas que aplican siempre:**
 
 - El heading del ejercicio es `### \`Nx\`` (solo la numeración entre backticks; sin descripción al lado).
-- El enunciado va en un callout `{: .enunciado }` con una sola línea de blockquote `>`. Si el enunciado tiene varios renglones, prefijar cada uno con `>`.
+- El enunciado va en un callout `{: .enunciado }` con una sola línea de blockquote `>`, **copiado textual del PDF**. Si el enunciado tiene varios renglones, prefijar cada uno con `>`.
 - La resolución va en un callout `{: .resolucion }` y **todas** las líneas (texto, ecuaciones en bloque, líneas vacías de separación) deben empezar con `>` para no romper el blockquote.
 - Cada paso del desarrollo se presenta como: oración explicativa → `$$ecuación$$` en bloque. Evitar amontonar varias igualdades en una sola línea; separar en pasos cortos legibles.
 - Usar `\dfrac` (no `\frac`) para fracciones que aparezcan en displays.
 - Cerrar siempre con dos líneas en negrita: `**Resultado:**` (la respuesta final, dominio e imagen cuando aplique) y `**Verificación:**` (confirmación contra la guía oficial).
 - No usar emojis tipo ✓/✗; usar las líneas de verificación en negrita.
-- Para definiciones por casos dentro de un callout, `\begin{cases}…\end{cases}` funciona dentro de `$$…$$` siempre que cada renglón del bloque empiece con `>`.
+- Para definiciones por casos dentro de un callout, `\begin{cases}…\end{cases}` debe ir en **una sola línea** dentro de `$$…$$` (todo el `\begin…\end` en el mismo renglón, separando ramas con `\\`). Saltos de línea reales dentro del entorno rompen el blockquote del callout.
+- **Nunca usar `|…|` con pipes crudos en una línea de blockquote** (callout): Kramdown los interpreta como separadores de columna de tabla y rompe el render. Para valor absoluto, normas, etc., usar siempre `\lvert … \rvert` (o `\vert`). Esto vale tanto en el enunciado como en cualquier ecuación inline o display dentro del callout.
 
 **Agrupación por consigna:** los ejercicios de una misma consigna (por ejemplo "Graficar, indicar dominio e imagen") van bajo un único `## Ejercicio N — …`, y cada inciso `Na`, `Nb`, … usa el template de arriba.
 

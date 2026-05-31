@@ -32,6 +32,50 @@ Cada ejercicio incluye el enunciado resumido, el desarrollo con explicaciones, e
 >
 > **Resultado:** $m(x)=-\dfrac75 x-\dfrac15$, con $D=I=\mathbb{R}$. ✓ Coincide con la respuesta oficial.
 
+### `1b`
+
+{: .enunciado }
+> La función lineal que representa una recta paralela a $2x-3y+9=0$ y corta al eje $x$ en el punto de abscisa $x=-\dfrac12$.
+
+{: .resolucion }
+> Dos rectas son paralelas cuando tienen la misma pendiente. Empezamos escribiendo la recta dada en forma explícita para identificar su pendiente.
+>
+> Partimos de:
+>
+> $$2x-3y+9=0.$$
+>
+> Despejamos $y$:
+>
+> $$3y=2x+9.$$
+>
+> $$y=\dfrac23 x+3.$$
+>
+> La pendiente de la recta dada es $\dfrac23$. Por lo tanto, la recta buscada tiene la misma pendiente:
+>
+> $$m=\dfrac23.$$
+>
+> Como corta al eje $x$ en $x=-\dfrac12$, pasa por el punto $\left(-\dfrac12,0\right)$. Planteamos la forma explícita:
+>
+> $$f(x)=\dfrac23 x+b.$$
+>
+> Imponemos $f\left(-\dfrac12\right)=0$:
+>
+> $$0=\dfrac23\left(-\dfrac12\right)+b.$$
+>
+> $$0=-\dfrac13+b.$$
+>
+> $$b=\dfrac13.$$
+>
+> Entonces:
+>
+> $$f(x)=\dfrac23 x+\dfrac13.$$
+>
+> Por tratarse de una función lineal no constante, su dominio e imagen son todos los reales.
+>
+> **Resultado:** $f(x)=\dfrac23 x+\dfrac13$, con $D_f=\mathbb{R}$ e $I_f=\mathbb{R}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
+
 ### 1c
 
 {: .enunciado }
@@ -131,15 +175,12 @@ Cada ejercicio incluye el enunciado resumido, el desarrollo con explicaciones, e
 ### `1e`
 
 {: .enunciado }
-> $f:D_f\to I_f \,/\, f(x)=|x|$.
+> $f:D_f\to I_f \,/\, f(x)=\lvert x\rvert$.
 
 {: .resolucion }
 > La función valor absoluto se define como
 >
-> $$|x|=\begin{cases}
-x & \text{si } x\geq 0,\\
--x & \text{si } x<0.
-\end{cases}$$
+> $$\lvert x\rvert=\begin{cases} x & \text{si } x\geq 0, \\ -x & \text{si } x<0. \end{cases}$$
 >
 > Esta función está definida para todo número real, porque se puede calcular el valor absoluto de cualquier $x\in\mathbb{R}$.
 >
@@ -149,11 +190,11 @@ x & \text{si } x\geq 0,\\
 >
 > Además, el valor absoluto nunca toma valores negativos:
 >
-> $$|x|\geq 0.$$
+> $$\lvert x\rvert\geq 0.$$
 >
 > Su menor valor es $0$, que ocurre cuando $x=0$:
 >
-> $$f(0)=|0|=0.$$
+> $$f(0)=\lvert 0\rvert=0.$$
 >
 > Por eso, su imagen es:
 >
@@ -241,74 +282,247 @@ x & \text{si } x\geq 0,\\
 
 ## Ejercicio 2 — Celsius y Fahrenheit
 
-La relación es lineal $F=mC+b$. Datos: $(C,F)=(0,32)$ y $(100,212)$.
+Obtener la ecuación de la recta que relaciona la temperatura $C$ en grados Celsius con la temperatura $F$ en grados Fahrenheit, sabiendo que el agua se hiela a $0^\circ C\,(32^\circ F)$ y hierve a $100^\circ C\,(212^\circ F)$.
 
-### `2a` - Función
+### `2a`
 
-$$m=\dfrac{212-32}{100-0}=\dfrac{180}{100}=\dfrac95,\qquad b=32\ (\text{ordenada en }C=0).$$
+{: .enunciado }
+> Hallar la función (terna) que modela la situación planteada.
 
-**Resultado: $F(C)=\dfrac95 C+32$.** La terna es $F:\mathbb{R}\to\mathbb{R}$.
+{: .resolucion }
+> La relación entre $C$ y $F$ es lineal, por lo que puede escribirse como
+>
+> $$F(C)=mC+b.$$
+>
+> Los datos del enunciado nos dan dos puntos en el plano $(C,F)$:
+>
+> $$(0,32)\quad\text{y}\quad(100,212).$$
+>
+> Calculamos la pendiente como el cociente de variaciones:
+>
+> $$m=\dfrac{F_2-F_1}{C_2-C_1}.$$
+>
+> Reemplazamos:
+>
+> $$m=\dfrac{212-32}{100-0}=\dfrac{180}{100}=\dfrac95.$$
+>
+> Para la ordenada al origen, usamos el primer punto $(0,32)$:
+>
+> $$32=\dfrac95\cdot 0+b.$$
+>
+> $$b=32.$$
+>
+> Entonces:
+>
+> $$F(C)=\dfrac95 C+32.$$
+>
+> La temperatura en Celsius puede tomar cualquier valor real, y la imagen también recorre todos los reales, por lo que la terna es:
+>
+> $$F:\mathbb{R}\to\mathbb{R}\,/\,F(C)=\dfrac95 C+32.$$
+>
+> **Resultado:** $F:\mathbb{R}\to\mathbb{R}\,/\,F(C)=\dfrac95 C+32$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-✓ Coincide con la respuesta oficial.
+### `2b`
 
-### `2b` - $-10^\circ$C en °F
+{: .enunciado }
+> ¿Cuántos grados Fahrenheit son $-10^\circ C$?
 
-$$F(-10)=\dfrac95(-10)+32=-18+32=14.$$
+{: .resolucion }
+> Para convertir una temperatura de Celsius a Fahrenheit, evaluamos la función hallada en `2a`:
+>
+> $$F(C)=\dfrac95 C+32.$$
+>
+> Reemplazamos $C=-10$:
+>
+> $$F(-10)=\dfrac95\cdot(-10)+32.$$
+>
+> $$F(-10)=-\dfrac{90}{5}+32.$$
+>
+> $$F(-10)=-18+32.$$
+>
+> $$F(-10)=14.$$
+>
+> **Resultado:** $-10^\circ C$ equivalen a $14^\circ F$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: $14^\circ$F.** ✓ Coincide con la respuesta oficial.
+### `2c`
 
-### `2c` - $0^\circ$F en °C
+{: .enunciado }
+> ¿Cuántos grados Celsius se corresponden con $0^\circ F$?
 
-Despejamos $C=\dfrac59(F-32)$:
+{: .resolucion }
+> Ahora queremos despejar $C$ en función de $F$. Partimos de:
+>
+> $$F=\dfrac95 C+32.$$
+>
+> Restamos $32$ a ambos miembros:
+>
+> $$F-32=\dfrac95 C.$$
+>
+> Multiplicamos ambos miembros por $\dfrac59$:
+>
+> $$C=\dfrac59(F-32).$$
+>
+> Reemplazamos $F=0$:
+>
+> $$C=\dfrac59(0-32).$$
+>
+> $$C=\dfrac59\cdot(-32).$$
+>
+> $$C=-\dfrac{160}{9}.$$
+>
+> En forma decimal aproximada:
+>
+> $$C\approx-17{,}78.$$
+>
+> **Resultado:** $0^\circ F$ equivalen a $-\dfrac{160}{9}^\circ C\approx-17{,}78^\circ C$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-$$C=\dfrac59(0-32)=-\dfrac{160}{9}\approx-17{,}8.$$
+### `2d`
 
-**Resultado: $\approx-17{,}8^\circ$C.** ✓ Coincide con la respuesta oficial.
+{: .enunciado }
+> Calcular el cambio de temperatura $\Delta F$ en los intervalos $[0,10]$, $[10,20]$ (en grados Celsius). Interpretar gráficamente.
 
-### `2d` - Cambio $\Delta F$ en $[0,10]$ y $[10,20]$ (en °C)
-
-En una recta, el incremento es la pendiente por el incremento de la variable. Para $\Delta C=10$:
-
-$$\Delta F=m\cdot\Delta C=\dfrac95\cdot10=18.$$
-
-Esto vale igual en $[0,10]$ y en $[10,20]$ (la razón de cambio es constante).
-
-**Resultado: $\Delta F=18^\circ$F en ambos intervalos.** ✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> En una función lineal $F(C)=mC+b$, el cambio en $F$ entre dos valores $C_1$ y $C_2$ es:
+>
+> $$\Delta F=F(C_2)-F(C_1)=m\,(C_2-C_1)=m\,\Delta C.$$
+>
+> Es decir, $\Delta F$ depende solo de la pendiente y de la longitud del intervalo, no de dónde está ubicado.
+>
+> **Intervalo $[0,10]$:** acá $\Delta C=10-0=10$, entonces
+>
+> $$\Delta F=\dfrac95\cdot 10=18.$$
+>
+> **Intervalo $[10,20]$:** acá también $\Delta C=20-10=10$, entonces
+>
+> $$\Delta F=\dfrac95\cdot 10=18.$$
+>
+> En ambos casos se obtiene el mismo cambio porque la pendiente $m=\dfrac95$ es constante: la razón de cambio de una función lineal es la misma en todo el dominio. Gráficamente, a incrementos iguales en el eje $C$ les corresponden incrementos iguales en el eje $F$, y la pendiente representa la inclinación de la recta (por cada $1^\circ C$ que sube la temperatura Celsius, la Fahrenheit sube $\dfrac95^\circ F$).
+>
+> **Resultado:** $\Delta F=18^\circ F$ en ambos intervalos.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
 ## Ejercicio 3 — Vaciado de un tanque
 
-Recta que parte de $4000$ L en $t=0$ y llega a $0$ L en $t=16$ min.
+El siguiente gráfico muestra el vaciado de un tanque de agua. Sólo mirando el gráfico respondan las siguientes preguntas. Del gráfico se lee que la cantidad de agua decrece linealmente desde $4000$ L en $t=0$ hasta $0$ L en $t=16$ min.
 
-### `3a` - ¿Cuánta agua y en cuánto tiempo?
+![Vaciado de un tanque](3.png){: .img-center}
 
-Del gráfico, el tanque pasa de $4000$ L a $0$ L.
+### `3a`
 
-**Resultado: se vaciaron $4000$ L en $16$ min.** ✓ Coincide con la respuesta oficial.
+{: .enunciado }
+> ¿Cuánta agua había en el tanque y en cuánto tiempo tardó en vaciarse?
 
-### `3b` - Litros por minuto
+{: .resolucion }
+> Leyendo el gráfico:
+>
+> - La recta cruza el eje vertical (cantidad de agua) en el valor $4000$, que corresponde al instante inicial $t=0$.
+> - La recta cruza el eje horizontal (tiempo) en $t=16$, momento en el que la cantidad de agua vale $0$.
+>
+> Por lo tanto, la cantidad inicial de agua era $4000$ L y el tanque tardó $16$ minutos en vaciarse.
+>
+> **Resultado:** había $4000$ L y tardó $16$ minutos en vaciarse.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-La pendiente (razón de cambio) es
+### `3b`
 
-$$m=\dfrac{0-4000}{16-0}=-250\ \text{L/min}.$$
+{: .enunciado }
+> ¿Cuántos litros por minuto salían del tanque cuando se vaciaba?
 
-**Resultado: se vacían $250$ L/min** (el signo negativo indica disminución). ✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> La cantidad de litros por minuto que salen del tanque es el valor absoluto de la razón de cambio del volumen respecto al tiempo, es decir, la pendiente de la recta del gráfico.
+>
+> Tomamos los dos puntos extremos $(0,4000)$ y $(16,0)$:
+>
+> $$m=\dfrac{V_2-V_1}{t_2-t_1}.$$
+>
+> Reemplazamos:
+>
+> $$m=\dfrac{0-4000}{16-0}=\dfrac{-4000}{16}=-250\ \dfrac{\text{L}}{\text{min}}.$$
+>
+> El signo negativo indica que el volumen disminuye con el tiempo. La cantidad de litros que salen por minuto es el módulo de esa razón.
+>
+> **Resultado:** salían $250$ L/min del tanque.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `3c` - ¿Cuándo había $1000$ L?
+### `3c`
 
-La fórmula es $V(t)=4000-250t$. Pedimos $V(t)=1000$:
+{: .enunciado }
+> Marquen en el gráfico el momento en el que en el tanque había $1000$ litros. ¿Cuánto tiempo había transcurrido desde que se comenzó a vaciar?
 
-$$1000=4000-250t\ \Rightarrow\ 250t=3000\ \Rightarrow\ t=12.$$
+{: .resolucion }
+> Necesitamos el instante $t$ para el cual el volumen es $V(t)=1000$. Usamos la fórmula que describe la recta (deducida en el bloque analítico):
+>
+> $$V(t)=4000-250\,t.$$
+>
+> Imponemos $V(t)=1000$:
+>
+> $$1000=4000-250\,t.$$
+>
+> Despejamos $t$:
+>
+> $$250\,t=4000-1000.$$
+>
+> $$250\,t=3000.$$
+>
+> $$t=\dfrac{3000}{250}=12.$$
+>
+> En el gráfico se marca el punto $(12,1000)$ sobre la recta.
+>
+> **Resultado:** habían transcurrido $12$ minutos.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: a los $12$ min.** ✓ Coincide con la respuesta oficial.
+### `3` — Trabajando analíticamente
 
-### Complementos
+{: .enunciado }
+> - Si queremos relacionar el tiempo de vaciado con la cantidad de agua en el tanque ¿cuál sería la variable independiente y cuál la dependiente?
+> - Definirlas con simbología adecuada y unidades correspondientes. ¿Cuál es el dominio e imagen en contexto?
+> - Escriban una fórmula que calcule la cantidad de agua a los $t$ minutos.
+> - ¿Cuál es la razón de cambio de volumen respecto al tiempo en un intervalo de $5$ minutos? ¿Y en uno de $10$ minutos?
 
-- **Variable independiente:** el tiempo $t$ (min). **Variable dependiente:** el volumen $V$ (L).
-- **Dominio en contexto:** $[0,16]$. **Imagen en contexto:** $[0,4000]$.
-- **Fórmula a los $t$ minutos:** $\boxed{V(t)=4000-250t}$.
-- **Razón de cambio a los $5$ y $10$ min:** por ser una recta, es constante e igual a $-250$ L/min en cualquier instante.
+{: .resolucion }
+> **Variables.** La cantidad de agua en el tanque depende del tiempo transcurrido desde que comenzó el vaciado, por lo que:
+>
+> - Variable independiente: $t$, el tiempo, medido en minutos.
+> - Variable dependiente: $V$, el volumen de agua, medido en litros.
+>
+> **Dominio e imagen en contexto.** El tiempo arranca en $0$ (instante en que empieza a vaciarse) y termina en $16$ (instante en que el tanque queda vacío). El volumen va desde los $4000$ L iniciales hasta los $0$ L finales. Por lo tanto:
+>
+> $$D=[0,16]\ \text{min},\qquad I=[0,4000]\ \text{L}.$$
+>
+> **Fórmula.** Buscamos la recta que pasa por $(0,4000)$ y $(16,0)$. La ordenada al origen es $4000$ y la pendiente, calculada en `3b`, es $-250$. Entonces:
+>
+> $$V(t)=4000-250\,t.$$
+>
+> **Razón de cambio en distintos intervalos.** La razón de cambio media del volumen respecto al tiempo en un intervalo $[t_1,t_2]$ es:
+>
+> $$\dfrac{\Delta V}{\Delta t}=\dfrac{V(t_2)-V(t_1)}{t_2-t_1}.$$
+>
+> Como $V$ es una función lineal con pendiente $-250$, esa razón es constante e igual a la pendiente para cualquier intervalo, sin importar su longitud:
+>
+> $$\dfrac{\Delta V}{\Delta t}=-250\ \dfrac{\text{L}}{\text{min}}.$$
+>
+> En particular:
+>
+> - En un intervalo de $5$ minutos: $\Delta V=-250\cdot 5=-1250$ L, con razón de cambio $-250$ L/min.
+> - En un intervalo de $10$ minutos: $\Delta V=-250\cdot 10=-2500$ L, con razón de cambio $-250$ L/min.
+>
+> El signo negativo refleja que en cualquier intervalo el volumen disminuye.
+>
+> **Resultado:** $V:[0,16]\to[0,4000]\,/\,V(t)=4000-250\,t$, con razón de cambio constante igual a $-250$ L/min (equivalente a $-1250$ L cada $5$ min y $-2500$ L cada $10$ min).
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 

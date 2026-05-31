@@ -73,6 +73,14 @@
     td { padding: 0.5rem 1rem; }
   }
 
+  // Utilidad para centrar imágenes inline en Markdown.
+  // Uso: ![alt](src){: .img-center}
+  img.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   // blockquote {
   //   border-left: 3px solid var(--link-color);
   // }
